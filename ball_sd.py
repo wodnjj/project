@@ -13,6 +13,6 @@ if response.status_code == 200:
         title = tr.select_one(".ellipsis.rank01 > span > a").text
         artist = tr.select_one(".ellipsis.rank02 > a").text
         print(rank, title, artist) 
-        rank += 1
+        rank += 1 
 else:
         print(f"HTTP 요청 실패 코드: {response.status_code}")
