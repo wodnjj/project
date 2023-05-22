@@ -8,4 +8,4 @@ search_url = base_url + keyword
 
 r = requests.get(search_url)
 
-soup = BeautifulSoup(r.text. "html.parser")
+soup = BeautifulSoup(r.text. "html.parser") 
