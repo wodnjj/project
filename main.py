@@ -8,4 +8,8 @@ search_url = base_url + keyword
 
 r = requests.get(search_url)
 
-soup = BeautifulSoup(r.text. "html.parser")
+soup = BeautifulSoup(r.text, "html.parser")
+
+items = soup.select(".txt_name txt_pit")
+
+print(items[0].text)
