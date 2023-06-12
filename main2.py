@@ -29,6 +29,6 @@ for data_tb in soupData: #div 리스트 개개를 data_tb라고 정의하고 sou
             dataList.append(matchData) #matchdata를 datalist 저장
 
 #df = pd.DataFrame(dataList)    #pandas로 출력        
-#df.T.to_csv('premier.csv', encoding='cp949')   #csv파일 출력 
+df.to_csv("premier.csv", index = False')   #csv파일 출력 
 
 print('premier.csv')
